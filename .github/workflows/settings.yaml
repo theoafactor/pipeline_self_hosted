@@ -1,0 +1,16 @@
+name: Settings
+on: 
+    push:
+        branches: 
+            - master
+
+jobs: 
+    settingsJob: 
+        runs-on: self-hosted
+        steps: 
+        - name: "Prep"
+          run: | 
+            echo "Prepping"
+        - name: "Create new folder"
+          run: | 
+            mkdir testfolder
